@@ -1,0 +1,120 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun May 18 15:53:58 2025
+# Process ID         : 30956
+# Current directory  : C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent8684 C:\Users\Admin\Desktop\Mirea\CircuitDesign\Lab4v1\Lab4v1\Lab4v1.xpr
+# Log file           : C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/vivado.log
+# Journal file       : C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1\vivado.jou
+# Running On         : Laptop
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 29860 MB
+# Swap memory        : 1879 MB
+# Total Virtual      : 31739 MB
+# Available Virtual  : 6572 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sources_1/new/SimpleFIFO.v w ]
+add_files C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sources_1/new/SimpleFIFO.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sources_1/new/UART_Input_Manager.v w ]
+add_files C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sources_1/new/UART_Input_Manager.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sources_1/new/UART_TX.v w ]
+add_files C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sources_1/new/UART_TX.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sources_1/new/UART_Output_Manager.v w ]
+add_files C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sources_1/new/UART_Output_Manager.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sources_1/new/UART.v w ]
+add_files C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sources_1/new/UART.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sources_1/new/fsm.v w ]
+add_files C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sources_1/new/fsm.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sim_1/new/testUARTBase.v w ]
+add_files -fileset sim_1 C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sim_1/new/testUARTBase.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testUARTBase [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+close [ open C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sources_1/new/ASCII_To_HEX.v w ]
+add_files C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sources_1/new/ASCII_To_HEX.v
+update_compile_order -fileset sources_1
+launch_simulation
+close [ open C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sources_1/new/HEX_To_ASCII.v w ]
+add_files C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/Lab4v1.srcs/sources_1/new/HEX_To_ASCII.v
+update_compile_order -fileset sources_1
+launch_simulation
+source testUARTBase.tcl
+save_wave_config {C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/testUARTBase_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/testUARTBase_behav.wcfg
+set_property xsim.view C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/testUARTBase_behav.wcfg [get_filesets sim_1]
+set_property -name {xsim.simulate.runtime} -value {1000000000ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/testUARTBase_behav.wcfg
+source testUARTBase.tcl
+set_property -name {xsim.simulate.runtime} -value {1000000ns} -objects [get_filesets sim_1]
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/testUARTBase_behav.wcfg
+source testUARTBase.tcl
+set_property -name {xsim.simulate.runtime} -value {10000000ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/testUARTBase_behav.wcfg
+source testUARTBase.tcl
+relaunch_sim
+set_property -name {xsim.simulate.runtime} -value {100000000ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/testUARTBase_behav.wcfg
+source testUARTBase.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/testUARTBase_behav.wcfg
+source testUARTBase.tcl
+relaunch_sim
+save_wave_config {C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/testUARTBase_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/testUARTBase_behav.wcfg
+source testUARTBase.tcl
+relaunch_sim
+save_wave_config {C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/testUARTBase_behav.wcfg}
+set_property -name {xsim.simulate.runtime} -value {10000000ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/testUARTBase_behav.wcfg
+source testUARTBase.tcl
+relaunch_sim
+save_wave_config {C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/testUARTBase_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/Admin/Desktop/Mirea/CircuitDesign/Lab4v1/Lab4v1/testUARTBase_behav.wcfg}
+close_sim

@@ -396,15 +396,10 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-Lab3v1.ip_user_files
-Lab3v1.sim
-Lab3v1.xpr
-Lab3v1.cache
-Lab3v1.hw
-Lab3v1.gen
-Lab3v1.runs
-*.wcfg
-*.wcfg
-/Lab4v1.ip_user_files
-/Lab4v1.cache
-/Lab4v1.hw
+**/Lab4v1.ip_user_files/
+**/Lab4v1.sim/
+**/Lab4v1.xpr/
+**/Lab4v1.cache/
+**/Lab4v1.hw/
+**/Lab4v1.gen/
+**/Lab4v1.runs/
