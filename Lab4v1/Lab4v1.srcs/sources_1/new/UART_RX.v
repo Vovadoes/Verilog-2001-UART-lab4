@@ -21,6 +21,8 @@ reg [2:0] major_buf;
 wire major_out = major_buf[0] & major_buf[1] |
                  major_buf[0] & major_buf[2] |
                  major_buf[1] & major_buf[2]; 
+                 
+reg stopBitIsGood;
 
 // Стартовая инициализация автомата
 initial 
@@ -32,6 +34,7 @@ begin
 	UART_RX_Data_Out = 0;
 	UART_RX_Ready_Out = 0;
 	major_buf = -1;
+	stopBitIsGood = 0;
 end
 
 always@(posedge clk)
@@ -45,6 +48,7 @@ begin
 			begin
 				bit_counter <= 0; 	
 				baud_counter <= 0;
+				stopBitIsGood <= 0;
 				UART_RX_Data_Out <= 0;
 		        UART_RX_Ready_Out <= 0;
 				state <= WAIT_START_BIT;
@@ -60,17 +64,22 @@ begin
 		LOAD_BIT: // Состояние загрузки очередного бита
 			// Считывание очередного бита производится только в середине
 			// такта BAUD_RATE для повышения надёжности передачи данных
-			if (baud_flag) 
+			if (baud_flag)
 				// Ожидаем прихода стоп-бита
-				if (bit_counter == 9)
-					begin
-						// Если пришёл стоп-бит (равный 1)
-						if (rx) 
+			    if (bit_counter == 10)
+			    begin
+			            // Если пришёл стоп-бит (равный 1)
+						if (major_out && stopBitIsGood)
 							UART_RX_Ready_Out <= 1; // Ставим в 1-цу флаг о том, что пакет принят
 							
 						// Если стоп-бит не пришёл, также уходим в сброс, однако флаг сигнализирует, 
 						// что пакет не был принят, т.е. входные данные этого пакета игнорируются
 						state <= RESET;
+				end
+				else if (bit_counter == 9)
+					begin
+						stopBitIsGood <= major_out;
+					    bit_counter <= bit_counter + 1;
 					end
 				// Ожидаем очередной бит (не стоп-бит)
 				else

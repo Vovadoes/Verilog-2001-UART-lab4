@@ -56,7 +56,10 @@ begin
                     if (bit_counter == 8)
                         tx <= 1;
                     else if (bit_counter == 9)    
-                        state <= RESET;        
+                        begin
+                        end
+                    else if (bit_counter == 10)    
+                        state <= RESET;     
                     else
                         tx <= data_buf[bit_counter];
                     bit_counter <= bit_counter + 1;
