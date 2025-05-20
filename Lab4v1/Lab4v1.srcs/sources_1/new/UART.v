@@ -11,7 +11,9 @@ module UART #
 (
 	input clk,		// Синхросигнал
 	input RsRx,	 	// Бит принимаемых данных (UART_RX)
-	output RsTx 	// Бит отправляемых данных (UART_TX)	
+	output RsTx, 	// Бит отправляемых данных (UART_TX)	
+	output [7:0] AN,
+    output [6:0] SEG
 );
 
 // FSM
