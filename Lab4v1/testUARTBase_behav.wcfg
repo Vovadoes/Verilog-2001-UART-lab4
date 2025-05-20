@@ -11,9 +11,9 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="27,220.000000 us"></ZoomStartTime>
-      <ZoomEndTime time="30,556.000001 us"></ZoomEndTime>
-      <Cursor1Time time="30,000.000000 us"></Cursor1Time>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="30.000000000 ms"></ZoomEndTime>
+      <Cursor1Time time="4.271530000 ms"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="304"></NameColumnWidth>
@@ -128,110 +128,10 @@
    <wvobject fp_name="group19" type="group">
       <obj_property name="label">UART_INPUT_M</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/clk" type="logic">
-         <obj_property name="ElementShortName">clk</obj_property>
-         <obj_property name="ObjectShortName">clk</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/reset" type="logic">
-         <obj_property name="ElementShortName">reset</obj_property>
-         <obj_property name="ObjectShortName">reset</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/RsRx" type="logic">
-         <obj_property name="ElementShortName">RsRx</obj_property>
-         <obj_property name="ObjectShortName">RsRx</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/out" type="array">
-         <obj_property name="ElementShortName">out[15:0]</obj_property>
-         <obj_property name="ObjectShortName">out[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/ready_out" type="logic">
-         <obj_property name="ElementShortName">ready_out</obj_property>
-         <obj_property name="ObjectShortName">ready_out</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/UART_RX_Ready_Out" type="logic">
-         <obj_property name="ElementShortName">UART_RX_Ready_Out</obj_property>
-         <obj_property name="ObjectShortName">UART_RX_Ready_Out</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/UART_RX_Data_Out" type="array">
-         <obj_property name="ElementShortName">UART_RX_Data_Out[7:0]</obj_property>
-         <obj_property name="ObjectShortName">UART_RX_Data_Out[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/FIFO_write_mode" type="logic">
-         <obj_property name="ElementShortName">FIFO_write_mode</obj_property>
-         <obj_property name="ObjectShortName">FIFO_write_mode</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/FIFO_data_in" type="array">
-         <obj_property name="ElementShortName">FIFO_data_in[7:0]</obj_property>
-         <obj_property name="ObjectShortName">FIFO_data_in[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/FIFO_read_mode" type="logic">
-         <obj_property name="ElementShortName">FIFO_read_mode</obj_property>
-         <obj_property name="ObjectShortName">FIFO_read_mode</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/FIFO_data_out" type="array">
-         <obj_property name="ElementShortName">FIFO_data_out[7:0]</obj_property>
-         <obj_property name="ObjectShortName">FIFO_data_out[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/FIFO_empty" type="logic">
-         <obj_property name="ElementShortName">FIFO_empty</obj_property>
-         <obj_property name="ObjectShortName">FIFO_empty</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/FIFO_full" type="logic">
-         <obj_property name="ElementShortName">FIFO_full</obj_property>
-         <obj_property name="ObjectShortName">FIFO_full</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/FIFO_valid" type="logic">
-         <obj_property name="ElementShortName">FIFO_valid</obj_property>
-         <obj_property name="ObjectShortName">FIFO_valid</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/ASCII_in" type="array">
-         <obj_property name="ElementShortName">ASCII_in[7:0]</obj_property>
-         <obj_property name="ObjectShortName">ASCII_in[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/HEX_out" type="array">
-         <obj_property name="ElementShortName">HEX_out[3:0]</obj_property>
-         <obj_property name="ObjectShortName">HEX_out[3:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/CLOCK_RATE" type="array">
-         <obj_property name="ElementShortName">CLOCK_RATE[31:0]</obj_property>
-         <obj_property name="ObjectShortName">CLOCK_RATE[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/BAUD_RATE" type="array">
-         <obj_property name="ElementShortName">BAUD_RATE[31:0]</obj_property>
-         <obj_property name="ObjectShortName">BAUD_RATE[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/DIGIT_COUNT" type="array">
-         <obj_property name="ElementShortName">DIGIT_COUNT[31:0]</obj_property>
-         <obj_property name="ObjectShortName">DIGIT_COUNT[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/RX_DATA_SIZE" type="array">
-         <obj_property name="ElementShortName">RX_DATA_SIZE[31:0]</obj_property>
-         <obj_property name="ObjectShortName">RX_DATA_SIZE[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/FIFO_MEM_SIZE" type="array">
-         <obj_property name="ElementShortName">FIFO_MEM_SIZE[31:0]</obj_property>
-         <obj_property name="ObjectShortName">FIFO_MEM_SIZE[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/FIFO_DATA_SIZE" type="array">
-         <obj_property name="ElementShortName">FIFO_DATA_SIZE[31:0]</obj_property>
-         <obj_property name="ObjectShortName">FIFO_DATA_SIZE[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/ASCII_SIZE" type="array">
-         <obj_property name="ElementShortName">ASCII_SIZE[31:0]</obj_property>
-         <obj_property name="ObjectShortName">ASCII_SIZE[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/HEX_SIZE" type="array">
-         <obj_property name="ElementShortName">HEX_SIZE[31:0]</obj_property>
-         <obj_property name="ObjectShortName">HEX_SIZE[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/CR" type="array">
-         <obj_property name="ElementShortName">CR[7:0]</obj_property>
-         <obj_property name="ObjectShortName">CR[7:0]</obj_property>
-      </wvobject>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="group124" type="group">
          <obj_property name="label">FIFO</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/simpleFIFO/reset" type="logic">
             <obj_property name="ElementShortName">reset</obj_property>
             <obj_property name="ObjectShortName">reset</obj_property>
@@ -320,6 +220,198 @@
             <obj_property name="ElementShortName">DATA_SIZE[31:0]</obj_property>
             <obj_property name="ObjectShortName">DATA_SIZE[31:0]</obj_property>
          </wvobject>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/ready_in" type="logic">
+         <obj_property name="ElementShortName">ready_in</obj_property>
+         <obj_property name="ObjectShortName">ready_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/data_in" type="array">
+         <obj_property name="ElementShortName">data_in[15:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/error_in" type="array">
+         <obj_property name="ElementShortName">error_in[1:0]</obj_property>
+         <obj_property name="ObjectShortName">error_in[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/RsTx" type="logic">
+         <obj_property name="ElementShortName">RsTx</obj_property>
+         <obj_property name="ObjectShortName">RsTx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/error_to_send" type="array">
+         <obj_property name="ElementShortName">error_to_send[3:0]</obj_property>
+         <obj_property name="ObjectShortName">error_to_send[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/tmp_data" type="array">
+         <obj_property name="ElementShortName">tmp_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tmp_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/tmp_error" type="array">
+         <obj_property name="ElementShortName">tmp_error[7:0]</obj_property>
+         <obj_property name="ObjectShortName">tmp_error[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/state" type="array">
+         <obj_property name="ElementShortName">state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/result_char_array" type="array">
+         <obj_property name="ElementShortName">result_char_array[111:0]</obj_property>
+         <obj_property name="ObjectShortName">result_char_array[111:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/error_char_array" type="array">
+         <obj_property name="ElementShortName">error_char_array[87:0]</obj_property>
+         <obj_property name="ObjectShortName">error_char_array[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/char_counter" type="array">
+         <obj_property name="ElementShortName">char_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">char_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/char_max_index" type="array">
+         <obj_property name="ElementShortName">char_max_index[3:0]</obj_property>
+         <obj_property name="ObjectShortName">char_max_index[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/package_ready" type="logic">
+         <obj_property name="ElementShortName">package_ready</obj_property>
+         <obj_property name="ObjectShortName">package_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/package_out" type="array">
+         <obj_property name="ElementShortName">package_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">package_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/error_mode" type="logic">
+         <obj_property name="ElementShortName">error_mode</obj_property>
+         <obj_property name="ObjectShortName">error_mode</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/FIFO_write_mode" type="logic">
+         <obj_property name="ElementShortName">FIFO_write_mode</obj_property>
+         <obj_property name="ObjectShortName">FIFO_write_mode</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/FIFO_data_in" type="array">
+         <obj_property name="ElementShortName">FIFO_data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/FIFO_read_mode" type="logic">
+         <obj_property name="ElementShortName">FIFO_read_mode</obj_property>
+         <obj_property name="ObjectShortName">FIFO_read_mode</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/FIFO_data_out" type="array">
+         <obj_property name="ElementShortName">FIFO_data_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_data_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/FIFO_empty" type="logic">
+         <obj_property name="ElementShortName">FIFO_empty</obj_property>
+         <obj_property name="ObjectShortName">FIFO_empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/FIFO_full" type="logic">
+         <obj_property name="ElementShortName">FIFO_full</obj_property>
+         <obj_property name="ObjectShortName">FIFO_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/UART_Ready_To_Send" type="logic">
+         <obj_property name="ElementShortName">UART_Ready_To_Send</obj_property>
+         <obj_property name="ObjectShortName">UART_Ready_To_Send</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/UART_TX_Ready_In" type="logic">
+         <obj_property name="ElementShortName">UART_TX_Ready_In</obj_property>
+         <obj_property name="ObjectShortName">UART_TX_Ready_In</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/UART_TX_Data_In" type="array">
+         <obj_property name="ElementShortName">UART_TX_Data_In[7:0]</obj_property>
+         <obj_property name="ObjectShortName">UART_TX_Data_In[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/FIFO_valid" type="logic">
+         <obj_property name="ElementShortName">FIFO_valid</obj_property>
+         <obj_property name="ObjectShortName">FIFO_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/ERROR_COUNT" type="array">
+         <obj_property name="ElementShortName">ERROR_COUNT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ERROR_COUNT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/RESULT_SIZE" type="array">
+         <obj_property name="ElementShortName">RESULT_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RESULT_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/CLOCK_RATE" type="array">
+         <obj_property name="ElementShortName">CLOCK_RATE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLOCK_RATE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/BAUD_RATE" type="array">
+         <obj_property name="ElementShortName">BAUD_RATE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BAUD_RATE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/ASCII_SIZE" type="array">
+         <obj_property name="ElementShortName">ASCII_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ASCII_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/HEX_SIZE" type="array">
+         <obj_property name="ElementShortName">HEX_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">HEX_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/ERROR_IN_BIT_SIZE" type="array">
+         <obj_property name="ElementShortName">ERROR_IN_BIT_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ERROR_IN_BIT_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/ERROR_HEX_SIZE" type="array">
+         <obj_property name="ElementShortName">ERROR_HEX_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ERROR_HEX_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/ERROR_HEX_BIT_SIZE" type="array">
+         <obj_property name="ElementShortName">ERROR_HEX_BIT_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ERROR_HEX_BIT_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/RESET" type="array">
+         <obj_property name="ElementShortName">RESET[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RESET[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/PREPARE_DATA" type="array">
+         <obj_property name="ElementShortName">PREPARE_DATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PREPARE_DATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/SEND_DATA" type="array">
+         <obj_property name="ElementShortName">SEND_DATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SEND_DATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/RESULT_TITLE_SIZE" type="array">
+         <obj_property name="ElementShortName">RESULT_TITLE_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RESULT_TITLE_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/RESULT_CHAR_ARRAY_SIZE" type="array">
+         <obj_property name="ElementShortName">RESULT_CHAR_ARRAY_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RESULT_CHAR_ARRAY_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/ERROR_TITLE_SIZE" type="array">
+         <obj_property name="ElementShortName">ERROR_TITLE_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ERROR_TITLE_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/ERROR_AFTER_SIZE" type="array">
+         <obj_property name="ElementShortName">ERROR_AFTER_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ERROR_AFTER_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/ERROR_CHAR_ARRAY_SIZE" type="array">
+         <obj_property name="ElementShortName">ERROR_CHAR_ARRAY_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ERROR_CHAR_ARRAY_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/END_SEQ_SIZE" type="array">
+         <obj_property name="ElementShortName">END_SEQ_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">END_SEQ_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/FIFO_MEM_SIZE" type="array">
+         <obj_property name="ElementShortName">FIFO_MEM_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_MEM_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testUARTBase/uart1/uart_output_manager/FIFO_DATA_SIZE" type="array">
+         <obj_property name="ElementShortName">FIFO_DATA_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_DATA_SIZE[31:0]</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group45" type="group">
@@ -614,7 +706,6 @@
    <wvobject fp_name="group94" type="group">
       <obj_property name="label">FSM</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/testUARTBase/uart1/FSM/clk" type="logic">
          <obj_property name="ElementShortName">clk</obj_property>
          <obj_property name="ObjectShortName">clk</obj_property>
@@ -667,7 +758,6 @@
    <wvobject fp_name="group107" type="group">
       <obj_property name="label">UART_RX</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/testUARTBase/uart1/uart_input_manager/uart_rx/clk" type="logic">
          <obj_property name="ElementShortName">clk</obj_property>
          <obj_property name="ObjectShortName">clk</obj_property>
