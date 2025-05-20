@@ -206,12 +206,12 @@ UART_Output_Manager #(.ERROR_COUNT(ERROR_COUNT)) uart_output_manager
 //	.error(FSM_Error_Output)
 //);
 
-main main(
-    .clk(clk),
-    input PS2_clk,
-    input PS2_dat,
-    output [7:0] AN,
-    output [6:0] SEG
-);
+//main main(
+//    .clk(clk),
+//    input PS2_clk,
+//    input PS2_dat,
+//    output [7:0] AN,
+//    output [6:0] SEG
+//);
 
 endmodule
