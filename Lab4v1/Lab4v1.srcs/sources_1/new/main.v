@@ -24,7 +24,7 @@ module main#(
 )(
     input clk,
     input PS2_clk,
-    input inpu,
+    input input,
     output [7:0] AN,
     output [6:0] SEG
 );
